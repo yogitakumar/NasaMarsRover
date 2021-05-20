@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
+using NasaMarsRover.Commands;
+
 
 namespace NasaMarsRover
 {
@@ -6,13 +9,24 @@ namespace NasaMarsRover
     {
         public static void Main()
         {
-
             var commandList = InputProcessor.BuildInputList();
 
-            String[] plateaUpperBound = commandList[0].ToString().Split(" ");
+            String[] plateauUpperBound = commandList[0].ToString().Split(" ");
 
             //Defining Landing Plateau using first instruction.
-            Plateau plateau = new Plateau(Int32.Parse(plateaUpperBound[0]), Int32.Parse(plateaUpperBound[1]));
+            Plateau plateau = new Plateau(Int32.Parse(plateauUpperBound[0]), Int32.Parse(plateauUpperBound[1]));
+
+            // Creating sublist with Rover initial position and commands
+            List<string> roverInput = commandList.GetRange(1, commandList.Count - 1);
+
+            for (int commandIndex = 0; commandIndex < roverInput.Count; commandIndex += 2)
+            {
+                Rover rover = InputProcessor.ParsePositionInput(roverInput[commandIndex], plateau);
+                List<Command> commands = InputProcessor.ParseCommandInput(roverInput[commandIndex + 1]);
+                rover.ExecuteCommandList(commands);
+                //Console.WriteLine(rover.DisplayLocation());
+            }
         }
+
     }
 }

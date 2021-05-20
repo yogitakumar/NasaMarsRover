@@ -12,7 +12,7 @@ namespace NasaMarsRoverTest
         public void CheckDataTypeOfNasaMessage()
         {
             List<String> str = InputProcessor.BuildInputList();
-            int i;
+            
             Assert.AreEqual(str.GetType(),typeof(List<String>));
             Assert.False(typeof(int) == typeof(List<String>));
         }
