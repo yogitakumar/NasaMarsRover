@@ -8,7 +8,6 @@ namespace NasaMarsRover
 {
     public class InputProcessor
     {
-
         public static Plateau parsePlateauInput(String plateauInput)
         {
             String[] inputArray = plateauInput.Split(" ");
@@ -26,7 +25,6 @@ namespace NasaMarsRover
             cmdList.Add("LMLMLMLMM");
             cmdList.Add("3 3 E");
             cmdList.Add("MMRMMRMRRM");
-
 
             return cmdList;
         }
