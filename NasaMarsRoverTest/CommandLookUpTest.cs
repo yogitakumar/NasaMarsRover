@@ -14,5 +14,19 @@ namespace NasaMarsRoverTest
             var command = CommandLookup.GetCommand("L");
             Assert.IsInstanceOf(typeof(SpinLeftCommand), command);
         }
+
+        [Test]
+        public void ShouldReturnSpinRightCommandByRightKey()
+        {
+            var command = CommandLookup.GetCommand("R");
+            Assert.IsInstanceOf(typeof(SpinRightCommand), command);
+        }
+
+        [Test]
+        public void ShouldReturnMoveForwardCommandByRightKey()
+        {
+            var command = CommandLookup.GetCommand("M");
+            Assert.IsInstanceOf(typeof(MoveForwardCommand), command);
+        }
     }
 }
