@@ -6,7 +6,7 @@ namespace NasaMarsRover
     {
         public static void Main()
         {
-            Console.WriteLine("Hello World of C#");
+            Console.WriteLine("Hello World!");
         }
     }
 }
