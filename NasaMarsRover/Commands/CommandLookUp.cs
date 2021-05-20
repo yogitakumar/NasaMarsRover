@@ -12,6 +12,8 @@ namespace NasaMarsRover.Commands
             CommandDictionary = new Dictionary<string, Command>
             {
                 ["L"] = new SpinLeftCommand(),
+                ["R"] = new SpinRightCommand(),
+                ["M"] = new MoveForwardCommand(),
             };
         }
 

@@ -65,7 +65,20 @@ namespace NasaMarsRover
         public void SpinLeft()
         {
             direction = this.direction.SpinLeft();
-        }       
+        }
+
+        public void SpinRight()
+        {
+            direction = this.direction.SpinRight();
+        }
+
+        public void MoveForward()
+        {
+            this.direction.MoveForward(this);
+            
+        }
+
+
 
     }
 }

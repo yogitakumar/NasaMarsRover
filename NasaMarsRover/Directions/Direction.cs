@@ -7,5 +7,9 @@ namespace NasaMarsRover.Directions
     public abstract class Direction
     {
         public abstract Direction SpinLeft();
+
+        public abstract Direction SpinRight();
+
+        public abstract void MoveForward(Rover rover);
     }
 }
