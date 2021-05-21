@@ -21,7 +21,7 @@ spin 90
 degrees left or right respectively, without moving from its current spot.
 'M' means move forward one grid point, and maintain the same heading.
 Assume that the square directly North from (x, y) is (x, y+1).
-Input:
+### Input:
 The first line of input is the upper-right coordinates of the plateau, the lower-left coordinates are assumed to be 0,0.
 The rest of the input is information pertaining to the rovers that have been deployed. Each rover has two lines of input. The first line
 gives the
@@ -51,3 +51,12 @@ Expected Output:
 
 5 1 E
 ******************
+
+After reading this problem statement I just took a paper and trace rover on paper instead on Mars
+![image](https://user-images.githubusercontent.com/61360028/119082474-1af09580-b9f6-11eb-8262-e3af2c7db319.png)
+
+### Final Output
+![image](https://user-images.githubusercontent.com/61360028/119101464-ed651580-ba10-11eb-995d-39109d1ae838.png)
+
+
+
