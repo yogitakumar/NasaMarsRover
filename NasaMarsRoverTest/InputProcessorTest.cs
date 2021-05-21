@@ -20,9 +20,11 @@ namespace NasaMarsRoverTest
         [Test]
         public void CheckCommandInput()
         {
-            String commandInputString = "RL";
+            String commandInputString = "RLRLRLM";
 
-            List<Command> expectedCommands = new List<Command> { new NasaMarsRover.Commands.SpinLeftCommand(), new NasaMarsRover.Commands.SpinRightCommand() };
+            List<Command> expectedCommands = new List<Command> { new NasaMarsRover.Commands.SpinLeftCommand(), new NasaMarsRover.Commands.SpinRightCommand(),
+            new NasaMarsRover.Commands.SpinLeftCommand(), new NasaMarsRover.Commands.SpinRightCommand() ,
+            new NasaMarsRover.Commands.SpinLeftCommand(), new NasaMarsRover.Commands.SpinRightCommand() ,new NasaMarsRover.Commands.MoveForwardCommand()};
 
             var roverExploreCommand = InputProcessor.ParseCommandInput(commandInputString);
 
