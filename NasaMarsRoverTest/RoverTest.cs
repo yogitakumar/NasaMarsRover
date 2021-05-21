@@ -17,6 +17,13 @@ namespace NasaMarsRoverTest
             Assert.AreEqual(rover.GetCoordinateY(), 3);
             Assert.AreEqual(rover.DisplayLocation(), "1 3 N");
         }
+
+        [Test]
+        public void ShouldThrowInvalidOperationExceptionForInvalidRoverCoordinates()
+        {
+            Assert.Throws<InvalidOperationException>(() => new Rover(new Plateau(5, 5), 2, 8, new NasaMarsRover.Directions.NorthDirection()));
+        }
+
     }
 
 }
