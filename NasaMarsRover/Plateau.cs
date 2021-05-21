@@ -15,7 +15,6 @@ namespace NasaMarsRover
         {
             this.upperBoundCoordinateX = upperBoundCoordinateX;
             this.upperBoundCoordinateY = upperBoundCoordinateY;
-            Console.WriteLine("Successfully defined Plateau.");
         }
         public int GetLowerBoundCoordinateX()
         {

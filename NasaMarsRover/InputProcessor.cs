@@ -18,7 +18,6 @@ namespace NasaMarsRover
 
         public static List<String> BuildInputList()
         {
-            //var cmdList = new ArrayList<>();
             List<String> cmdList = new List<String>();
             cmdList.Add("5 5");
             cmdList.Add("1 2 N");

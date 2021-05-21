@@ -22,7 +22,6 @@ namespace NasaMarsRover
             this.coordinateX = coordinateX;
             this.coordinateY = coordinateY;
             this.direction = direction;
-            Console.WriteLine("DIRECTION : "+direction);
             ValidateLocation();
         }
 
