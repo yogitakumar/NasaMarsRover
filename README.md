@@ -53,14 +53,41 @@ Expected Output:
 ```
 ******************
 
-After reading this problem statement I just took a paper and trace rover on paper instead on Mars
+After reading this problem statement I took a pencil and paper to work through the problem in a logical way.
 ![image](https://user-images.githubusercontent.com/61360028/119082474-1af09580-b9f6-11eb-8262-e3af2c7db319.png)
 
 ### Final Output
 ![image](https://user-images.githubusercontent.com/61360028/119101464-ed651580-ba10-11eb-995d-39109d1ae838.png)
 
-### Clone this project
-1. After you make a clone open NasaMarsRover.sln in Visual Studio.
-2. Build solution
-3. Run Solution
+### Technology used
+C#
 
+NUnit
+
+### How to install and use
+1. Clone the repository
+```
+git clone https://github.com/yogitakumar/NasaMarsRover.git
+```
+
+2. Navigate through project, and open NasaMarsRover.sln
+ ![image](https://user-images.githubusercontent.com/61360028/119126181-9e2bde80-ba2a-11eb-92b2-68659b0509fb.png)
+
+3. Build Project from Build Menu
+4. Run your project
+5. To run test cases 
+![image](https://user-images.githubusercontent.com/61360028/119126611-24e0bb80-ba2b-11eb-9e12-12002f15af48.png)
+
+### Test Driven Development
+I used TDD approch while working with this problem, Test Driven Development (TDD) is software development approach in which test cases are developed to specify and validate what the code will do. In simple terms, test cases for each functionality are created and tested first and if the test fails then the new code is written in order to pass the test and making code simple and bug-free.
+
+Here I write some tests to check Plateau bound, plateau upperbound, lowerbound, roverlanding, commands, input.
+
+TDD approch is
+1. Write fail test
+2. Make test pass
+3. Refactor code
+
+🎉🎊🎉🥳
+####  And
+## Rover moves successfully on plateau of Mars
