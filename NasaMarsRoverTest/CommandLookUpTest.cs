@@ -9,7 +9,7 @@ namespace NasaMarsRoverTest
     class CommandLookUpTest
     {
         [Test]
-        public void ShouldReturnSpinLeftCommandByRightKey()
+        public void ShouldReturnSpinLeftCommandByLeftKey()
         {
             var command = CommandLookup.GetCommand("L");
             Assert.IsInstanceOf(typeof(SpinLeftCommand), command);
@@ -23,7 +23,7 @@ namespace NasaMarsRoverTest
         }
 
         [Test]
-        public void ShouldReturnMoveForwardCommandByRightKey()
+        public void ShouldReturnMoveForwardCommandByMoveForwardKey()
         {
             var command = CommandLookup.GetCommand("M");
             Assert.IsInstanceOf(typeof(MoveForwardCommand), command);

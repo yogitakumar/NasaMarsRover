@@ -21,8 +21,7 @@ namespace NasaMarsRover.Commands
         {
             if (CommandDictionary.ContainsKey(commandKey))
             {
-                //Console.WriteLine("Command from Dictionary : " + CommandDictionary[commandKey]);
-                return CommandDictionary[commandKey];
+               return CommandDictionary[commandKey];
             }
             throw new InvalidOperationException("Invalid Command Key found");
         }
