@@ -12,7 +12,6 @@ namespace NasaMarsRoverTest
         public void ValidateDataTypeForCommandInput()
         {
             List<String> str = InputProcessor.BuildInputList();
-            
             Assert.AreEqual(str.GetType(),typeof(List<String>));
             Assert.False(typeof(int) == typeof(List<String>));
         }
