@@ -34,7 +34,7 @@ moving.
 The output for each rover should be its final co-ordinates and heading.
 
 Test Input:
-
+```
 5 5
 
 1 2 N
@@ -44,12 +44,13 @@ LMLMLMLMM
 3 3 E
 
 MMRMMRMRRM
-
+```
 Expected Output:
-
+```
 1 3 N
 
 5 1 E
+```
 ******************
 
 After reading this problem statement I just took a paper and trace rover on paper instead on Mars
@@ -58,5 +59,8 @@ After reading this problem statement I just took a paper and trace rover on pape
 ### Final Output
 ![image](https://user-images.githubusercontent.com/61360028/119101464-ed651580-ba10-11eb-995d-39109d1ae838.png)
 
-
+### Clone this project
+1. After you make a clone open NasaMarsRover.sln in Visual Studio.
+2. Build solution
+3. Run Solution
 
