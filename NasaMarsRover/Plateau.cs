@@ -16,18 +16,22 @@ namespace NasaMarsRover
             this.upperBoundCoordinateX = upperBoundCoordinateX;
             this.upperBoundCoordinateY = upperBoundCoordinateY;
         }
+
         public int GetLowerBoundCoordinateX()
         {
             return lowerBoundCoordinateX;
         }
+
         public int GetLowerBoundCoordinateY()
         {
             return lowerBoundCoordinateY;
         }
+
         public int GetUpperBoundCoordinateX()
         {
             return upperBoundCoordinateX;
         }
+
         public int GetUpperBoundCoordinateY()
         {
             return upperBoundCoordinateY;
