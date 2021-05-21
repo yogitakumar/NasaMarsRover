@@ -46,7 +46,6 @@ namespace NasaMarsRover
                 Command currentCommand = CommandLookup.GetCommand(character.ToString());
                 commandList.Add(currentCommand);
             }
-
             return commandList;
         }
     }
