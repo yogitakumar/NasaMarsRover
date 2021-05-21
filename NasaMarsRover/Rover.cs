@@ -23,7 +23,7 @@ namespace NasaMarsRover
             this.coordinateY = coordinateY;
             this.direction = direction;
             Console.WriteLine("DIRECTION : "+direction);
-      
+            ValidateLocation();
         }
 
         private Plateau GetPlateau()
@@ -78,7 +78,21 @@ namespace NasaMarsRover
             
         }
 
+        public String DisplayLocation()
+        {
+            return coordinateX + " "
+                    + coordinateY + " "
+                    + DirectionLookUp.GetDirectionKey(this.direction);
+        }
 
+        private void ValidateLocation()
+        {
+            if (this.GetCoordinateX() > this.GetPlateau().GetUpperBoundCoordinateX()
+                    || this.GetCoordinateY() > this.GetPlateau().GetUpperBoundCoordinateY()
+                    || this.GetCoordinateX() < this.GetPlateau().GetLowerBoundCoordinateX()
+                    || this.GetCoordinateY() < this.GetPlateau().GetLowerBoundCoordinateY())
+                throw new InvalidOperationException("The Rover cannot be out of bounds of the plateau!");
+        }
 
     }
 }

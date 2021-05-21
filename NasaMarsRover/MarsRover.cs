@@ -24,7 +24,7 @@ namespace NasaMarsRover
                 Rover rover = InputProcessor.ParsePositionInput(roverInput[commandIndex], plateau);
                 List<Command> commands = InputProcessor.ParseCommandInput(roverInput[commandIndex + 1]);
                 rover.ExecuteCommandList(commands);
-                //Console.WriteLine(rover.DisplayLocation());
+                Console.WriteLine(rover.DisplayLocation());
             }
         }
 
