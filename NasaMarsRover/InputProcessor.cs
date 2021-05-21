@@ -24,7 +24,6 @@ namespace NasaMarsRover
             cmdList.Add("LMLMLMLMM");
             cmdList.Add("3 3 E");
             cmdList.Add("MMRMMRMRRM");
-
             return cmdList;
         }
 

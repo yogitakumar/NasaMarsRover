@@ -9,7 +9,7 @@ namespace NasaMarsRoverTest
     class InputProcessorTest
     {
         [Test]
-        public void CheckDataTypeOfNasaMessage()
+        public void ValidateDataTypeForCommandInput()
         {
             List<String> str = InputProcessor.BuildInputList();
             
@@ -29,7 +29,12 @@ namespace NasaMarsRoverTest
             var roverExploreCommand = InputProcessor.ParseCommandInput(commandInputString);
 
             Assert.False(expectedCommands == roverExploreCommand);
+        }
 
+        [Test]
+        public void ShouldThrowInvalidOperationExceptionForInvalidPlateauCoordinates()
+        {
+            Assert.Throws<InvalidOperationException>(() => CommandLookup.GetCommand("X"));
         }
     }
 }

@@ -28,7 +28,6 @@ namespace NasaMarsRover
         {
             return upperBoundCoordinateX;
         }
-
         public int GetUpperBoundCoordinateY()
         {
             return upperBoundCoordinateY;

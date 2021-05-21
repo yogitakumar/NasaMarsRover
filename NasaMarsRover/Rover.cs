@@ -15,7 +15,7 @@ namespace NasaMarsRover
 
         public Rover(Plateau plateau, int coordinateX, int coordinateY, Direction direction)
         {
-            if (plateau == null) throw new Exception("The Plateau you create the Rover in cannot be null!");
+            if (plateau == null) throw new Exception("The Plateau for Rover cannot be null!");
             if (direction == null) throw new Exception("The Direction the Rover is facing in cannot be null!");
 
             this.plateau = plateau;

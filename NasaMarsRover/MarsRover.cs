@@ -20,6 +20,15 @@ namespace NasaMarsRover
             // Creating sublist with Rover initial position and commands
             List<string> roverInput = commandList.GetRange(1, commandList.Count - 1);
 
+            //Print the input list
+            Console.WriteLine("Test Input : ");
+            foreach(string cmd in commandList)
+            {
+                Console.WriteLine(cmd);
+            }
+
+            Console.WriteLine("\nTest Output : ");
+
             //Execute CommandList 
             for (int commandIndex = 0; commandIndex < roverInput.Count; commandIndex += 2)
             {
